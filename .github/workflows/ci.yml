@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          string1="barf"
+          string1="bar"
           string2=${{ secrets.FOO }}
           if [ "$string1" == "$string2" ]; then
             echo "The strings are equal."

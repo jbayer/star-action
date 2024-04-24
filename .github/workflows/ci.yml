@@ -32,10 +32,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          string1="bar"
-          string2=${{ secrets.FOO }}
+          string1="SK342cf662a92ca57732ec70a0a46841dc"
+          string2=${{ secrets.TWILIO_API_KEY_SID }}
           if [ "$string1" == "$string2" ]; then
-            echo "The strings are equal."
+            echo "The twilio keys are equal."
           else
             echo "The strings are not equal."
           fi
